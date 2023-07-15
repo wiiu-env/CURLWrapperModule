@@ -1,6 +1,6 @@
 [![CI-Release](https://github.com/wiiu-env/CURLWrapperModule/actions/workflows/ci.yml/badge.svg)](https://github.com/wiiu-env/CURLWrapperModule/actions/workflows/ci.yml)
 
-Aroma Module that (hopefully) exports all functions of libcurl (Currently targeting: curl 7.84.0)
+Aroma Module that (hopefully) exports all functions of libcurl (Currently targeting: curl 8.0.1)
 
 ## Usage
 (`[ENVIRONMENT]` is a placeholder for the actual environment name.)
@@ -23,7 +23,7 @@ docker run -it --rm -v ${PWD}:/project curlwrappermodule-builder make
 docker run -it --rm -v ${PWD}:/project curlwrappermodule-builder make clean
 ```
 
-The bundled Dockerfile creates a module with this version: `libcurl/7.84.0 mbedTLS/2.28.1 zlib/1.2.11`
+The bundled Dockerfile creates a module with this version: `libcurl/8.0.1 mbedTLS/2.28.3 zlib/1.2.13`
 
 ## Format the code via docker
 
