@@ -109,6 +109,8 @@ WUMS_EXPORT_FUNCTION(curl_url_dup);
 WUMS_EXPORT_FUNCTION(curl_url_get);
 WUMS_EXPORT_FUNCTION(curl_url_set);
 WUMS_EXPORT_FUNCTION(curl_url_strerror);
+WUMS_EXPORT_FUNCTION(curl_ws_send);
+WUMS_EXPORT_FUNCTION(curl_ws_recv);
 
 // Export cacerts
 WUMS_EXPORT_DATA(cacert_pem);
