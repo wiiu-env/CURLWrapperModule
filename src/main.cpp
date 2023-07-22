@@ -6,12 +6,16 @@ extern "C" {
 }
 #endif
 #include "cacert_pem.h"
+#include "version.h"
 #include <curl/mprintf.h>
 #include <wums.h>
 
 WUMS_MODULE_EXPORT_NAME("homebrew_curlwrapper");
 
+#define MODULE_VERSION "v0.1"
+
 WUMS_APPLICATION_STARTS() {
+    OSReport("Running CURLWrapperModule " MODULE_VERSION MODULE_VERSION_EXTRA "\n");
     curl_global_init(CURL_GLOBAL_ALL);
 }
 
