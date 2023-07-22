@@ -12,7 +12,7 @@ extern "C" {
 
 WUMS_MODULE_EXPORT_NAME("homebrew_curlwrapper");
 
-#define MODULE_VERSION "v0.1"
+#define MODULE_VERSION "v0.1.1"
 
 WUMS_APPLICATION_STARTS() {
     OSReport("Running CURLWrapperModule " MODULE_VERSION MODULE_VERSION_EXTRA "\n");
