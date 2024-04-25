@@ -14,7 +14,7 @@ extern "C" {
 WUMS_MODULE_EXPORT_NAME("homebrew_curlwrapper");
 WUMS_USE_WUT_DEVOPTAB();
 
-#define MODULE_VERSION "v0.1.1"
+#define MODULE_VERSION "v0.1.2"
 
 WUMS_APPLICATION_STARTS() {
     OSReport("Running CURLWrapperModule " MODULE_VERSION MODULE_VERSION_EXTRA "\n");
