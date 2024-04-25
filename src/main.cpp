@@ -8,9 +8,11 @@ extern "C" {
 #include "cacert_pem.h"
 #include "version.h"
 #include <curl/mprintf.h>
+#include <curl/multi.h>
 #include <wums.h>
 
 WUMS_MODULE_EXPORT_NAME("homebrew_curlwrapper");
+WUMS_USE_WUT_DEVOPTAB();
 
 #define MODULE_VERSION "v0.1.1"
 
@@ -60,6 +62,7 @@ WUMS_EXPORT_FUNCTION(curl_unescape);
 WUMS_EXPORT_FUNCTION(curl_free);
 WUMS_EXPORT_FUNCTION(curl_global_init_mem);
 WUMS_EXPORT_FUNCTION(curl_global_sslset);
+WUMS_EXPORT_FUNCTION(curl_global_trace);
 WUMS_EXPORT_FUNCTION(curl_slist_append);
 WUMS_EXPORT_FUNCTION(curl_slist_free_all);
 WUMS_EXPORT_FUNCTION(curl_getdate);
@@ -67,6 +70,7 @@ WUMS_EXPORT_FUNCTION(curl_multi_init);
 WUMS_EXPORT_FUNCTION(curl_multi_add_handle);
 WUMS_EXPORT_FUNCTION(curl_multi_remove_handle);
 WUMS_EXPORT_FUNCTION(curl_multi_fdset);
+WUMS_EXPORT_FUNCTION(curl_multi_get_handles);
 WUMS_EXPORT_FUNCTION(curl_multi_wait);
 WUMS_EXPORT_FUNCTION(curl_multi_poll);
 WUMS_EXPORT_FUNCTION(curl_multi_wakeup);
