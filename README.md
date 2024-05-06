@@ -23,7 +23,7 @@ docker run -it --rm -v ${PWD}:/project curlwrappermodule-builder make
 docker run -it --rm -v ${PWD}:/project curlwrappermodule-builder make clean
 ```
 
-The bundled Dockerfile creates a module with this version: `libcurl/8.0.1 mbedTLS/2.28.3 zlib/1.2.13`
+The bundled Dockerfile creates a module with this version: `libcurl/8.7.1 mbedTLS/2.28.8 zlib/1.3`
 
 ## Format the code via docker
 
